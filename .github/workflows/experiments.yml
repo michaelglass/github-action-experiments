@@ -1,0 +1,10 @@
+name: experiments
+on:
+  - push
+
+jobs:
+  fetch-job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate matrix
+        run: echo ${{ github.job }}
